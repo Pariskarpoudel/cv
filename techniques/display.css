@@ -1,0 +1,16 @@
+p {
+background-color: red;
+}
+.pro {
+text-decoration: underline;
+}
+span{
+background-color: blue;
+}
+.hero {
+display: inline-block;
+}
+.hell{
+visibility: hidden;
+
+}

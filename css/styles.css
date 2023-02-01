@@ -1,0 +1,179 @@
+body {
+margin: 0;  /*mathi ra sidema tassaauna coz bodysita pailaibata margin thyo margin maatra vanepaar, maargin on all 4 sides bujxa */
+text-align: center;
+font-family: 'Merriweather', serif;
+/*
+font-family: verdana, sans-serif;
+fontstyle->verdana,fontfamily->sansserif [chuchhe navako],                serif-> chuchhe vako
+fontstyle: sansserif matra lekhepar, sans serif family ko default fontstyle j xa browserko, tei render gardinxa
+websafe-fonts-> most os have this fonts preinstalled, so they can render, ani hamle jun fontstyle diyim, usersleni tei dekhnasakun
+if hamle deko font is not in their os, browser cant render it, if verdana was not in os, browserle sansserifko default fontstyle dekhauthyo,i.e.arial
+websafe font-stack ma gayera chaiyeko font details herda[for helvetica]: font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+firstly, browser tries to render helvetica, tyo os ma navaye,arial-> tyoni navaye-> sansserif ko defaultt render garxa
+What if i compulsoruly want user to see the exact font that i used? By no compromises, whether they have in their os oor not?
+-> Font embedding - Google fonts-> serach required font-> embed it by using the given link in head
+css style to use vanera dekohunxa, tei copy paste gare: font-family: 'Merriweather', serif;
+*/
+
+
+
+
+
+
+}
+
+h1 {
+/*margin-top: 0;*/  /* yesita ni pailai margin thyo topma , sooo */
+font-family: 'Sacramento', cursive;
+font-size: 5.625rem;
+margin: 50px auto 0 auto;
+color: #66BFBF;
+padding-down: 0px;
+
+}
+
+h2 {
+font-family: 'Montserrat', sans-serif;
+color: #66BFBF;
+}
+h3 {
+font-family: 'Montserrat', sans-serif;
+color: #11999E;
+}
+.intro {
+color: #40514E;
+}
+
+p {
+color: black;
+}
+a {
+color: #11999E;
+margin: 0 10px;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+color: EAF6F6;}
+.top-container {
+background-color: #EAF6F6;
+padding-top: 100px;
+}
+
+.middle-container {
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+.profile {
+width: 30%;
+line-height: 2;
+margin: 0 auto;
+}
+.bottom-container {
+padding: 50px;
+background-color: #66BFBF;
+}
+
+.top-cloud {
+position: absolute;
+right: 300px;
+top: 50px;
+}
+.bottom-cloud {
+position: absolute;
+/* esle garda bottom cloud control flow bata hatyo ani mountain matra centered vayo
+pailaa chai bottomcloud ra mountain, duitai centered huna khojethe inline hudahudai, so mountain bichma thena*/
+left: 300px;
+bottom: 250px;
+}
+.pp-image {
+border-radius: 100%;
+background-color: white;
+height:230px;
+width:230px;
+}
+
+
+.span {
+text-decoration: underline;
+}
+
+h2.programmer {  /* .programmer matra vaneni hunthyo, h2 maddhey pani programmer classwala vaneko */
+font-size: 2.5rem;
+padding-top: 0px;
+margin-top: 0px;
+font-weight: normal;
+}
+.hr-dotted {
+    background-color: white;
+    border-style: none;
+    border-top-style: dotted;
+    /* 4 ota borders hunxan kere rectangle ma , auta top wala border ma matra operation garnivaoo */
+    border-color: grey;
+    border-width: 5px;
+    height: 0px;  /* height of particular element wala block */
+    width: 5%;  /* width of particular element wala block, 5% of total screen width[so it will adjust in mbl and laptop] */
+    }
+
+/*  2 skill-row classwala divs are taking whole width, but we want them to take only 50% width */
+.skill-row {
+width: 50%;
+/* but ik block elements maa width change garepaar, textalign:center le kam gardena-> so margin: auto use */
+margin: 0 auto 0 auto;  /* clockwise, left ra right auto xa, so horizontally centered */
+line-height: 2;
+
+}
+.contact-msg {
+width: 40%;
+margin: 0 auto;/* block elementko width change garesi, center garne tarika: margin: auto in right left to make horizontal centering*/
+}
+
+.skill-img {
+height: 200px;
+width: 25%;
+float: left;
+margin-right: 30px;
+}
+
+.kohli {
+height: 250px;
+float: right;
+}
+/*
+.css_clear_usage {
+clear: left
+}
+left tira ko imagele gareko wrapping clear hunevo
+ */
+.contact-me {
+line-height: 2;}
+/* css button generator ma gaera design garni, code afai lekhdiyo cssko */
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  /* gradient color ma topma ra bottom ma farak color hunxanita tesailai ho */
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;  /* so that underline hunna */
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}

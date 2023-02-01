@@ -1,0 +1,31 @@
+/************************************************NOTES******************************************************************/
+Display property of css has 4 values:
+display: block;
+display: inline;
+display: inline-block;
+display: none;
+
+- Common block elements -> <p> <h1> <div> <ol> <ul> <li> <form>
+- Common inline elements -> <span> <img>  <a> or anchortags
+- <img> act as inline-block
+
+# Block elements
+-> Take up the whole width of screen and dont allow any other elements in its path.
+-> so <p> duita lekhda new linema banxan/ pesticides or bg color bata check gare ni hunxa napattaye
+-> size, i.e height or width can be changed and can be made acc to our choice
+
+# Inline elements
+-> Content jati ko xa, teti maatra part linxa ani tespaxi sidema/inline maa aru elementslaai ni basna dinxa
+-> size, i.e height or width cannot be changed and cannot be made acc to our choice
+-> <p> ko kaam <span> le garyo
+
+# Inline-Block elements [best]
+-> inline vayekaa kaaran sab screen width linna, jati content xa tetimatra linxan ani aru element laini allow garxan tei linemaa
+-> block vayekaa kaaran size can be changed and can be made acc to our choice
+display: inline-block; garera jun laini inline block banauna milo, jun= either inline or block
+
+
+-> hunata block element laini inline matra ni banauna ta milxa but artha rahanna,cozn size change garna milnivayena nita
+-> block element koni width ghataera sano bhagma only bg=red garna ta painxa but ajaini, esle, tyo linema aru element basna dinna
+-> kunai class waa elementlai display:none garepaar it gets removed from page, tesle ogateko space ni rahanna
+-> kunai class waa elementlai visibility:hidden garepaar it doesnt get removed, tesle ogateko space ni rahanxa tehi

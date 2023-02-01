@@ -1,0 +1,112 @@
+body {
+margin: 0px;
+
+}
+
+.red{
+display: inline-block;
+background-color: red;
+height: 100px;
+width: 100px;
+position: absolute;
+right: 0px;  /* red ko lagi parent is container div, so container div ko right tira janxa with 0px margin */
+}
+.blue {
+display: inline-block;
+background-color: blue;
+height: 100px;
+width: 100px;
+position: absolute;
+left: 100px;
+}
+.yellow {
+display: inline-block;
+background-color: yellow;
+height: 100px;
+width: 100px; /* inurko positioning ta bodyko respect ma ho, body sita leftmargin 0px, but div tei thyo pailaidekhi, so overlap garera dhakidiyo*/
+position: fixed; /* paila yellow banayera paxi div baanavaye divle dhakdinthyo*/
+left: 0;
+}
+.container {
+display: inline-block;
+background-color: grey;
+height: 300px;
+width: 300px;
+position: relative;
+}
+
+/*******************************************NOTES****************************************/
+/*
+1) Static Positioning -> default positioning of elements without using any css
+-> html flow/ controlflow -> default roopmaa html le afai arrange gareko,laskaarai palaipalo elements ko arrangement/structureee
+- eg: I'm Pariskar, a programmer, mountain img control flow or html flow ma xannn
+2) Relative positioning -> positioning of element relative to the default position
+- position: relative;
+- top: 50px;
+-vanepaar default position baata , top baata 50 px push garxa div laai down tira
+-margin betn previous default top border and current top border became 50 px
+-margin-top: garera diyepaar, yo div ta tala push hunthyo, but esko talako element laini afai tala push hunthyo/garthyo
+-but relative positioning maa -> div push ta hunxa tara aru element/div maa keipani asar paardena, aru element/div mathi overlap vayera dhaakdinxa baru
+- ADV:It doesnt affect the control flow, means:
+- estari element saarda aru element jahako tehijo rahanxan, bichma aaye esle overlap gardinxa
+
+3) Absolute positioning -> positoning of element relative to its parent element, auta div xa vani,tyo div ko parent element = body
+coz tyo body vitra xa ni, div vitra content xa vani, content ko lagi parent element = div, thulo div vitra sano div xa vani,
+thulo div is parent element
+
+- position: absolute;
+- right: 50px;
+-gives a right margin of 50px wrt its parent element, div xa ra div ko parent element body ho vani, body ko right side tira
+-janxa ani 50 px margin diyera basxa, gives right margin of 50px to div with the body/screen
+-chaini belasamma position specify garirakhna sakinxa, right 50px; tespaxi left:20px; then top:30px until we get our desired location
+- yo specify garda aru kunai element bich maa ayo vani, kei asar paardaina,push gardaina, overlap garera dhakidinxa
+- DIS:It affects the control flow, estari element saardaa, aru element ni shift hunasakxan, push garera shift huni vaneko haina
+esko bichma ni koi element aye overlap gardinxa, esto vanna khojeko:
+sablai absolute position diye chai yo problem audaina
+- It takes the element out of the html flow or control flow, default positioning baata lenaadenaa nahuni garaidinxa
+-> align: center garayepaar, default html flow le nai centered garauxa laskarai sabailai, but kunai auta element le
+parisani garyo or center bata hatauna paro vani, simply, tesko position: absolute garera control flowbata hatauni
+
+By default, tinta div (1,2,3) laskaarai xanvani[vertical], ani auta topmost div lai position:absolute banaim vani
+yo control flow bata hatyo->
+yo ta hamle j dinxam tehi anusar style hunxa, but eskaa talakaa duita div mathi shift hunxan, coz static/default positioning ma
+pailo element 2 vayo ani dosro element 3 vayo, so mathi shift, coz default positioning ko pailo element sadai topma hunxa
+tinta div thiye auta ta gayo, aba baki duita-> so tini mathi sare
+But relative ma esto conrol flow affect hunthena,
+SO, MOSTLY WE USE ABSOLUTE, KAILEKAAI CONTROL FLOW NABIGRIUS VANNALAI RELATIVE
+
+-> grey div vitra red div parxa so
+-> red div ko absolute positioning garniho relative to parent element,i.e grey div, so grey div ko position: relative; [position specify garna pardena yetti gare hunxa]
+-> so parent element ko relative positioning garniho, so parent element ko position: relative; lekhni , parent body hovani ta parena
+-> hunata relative nadiyeni keihunna hyola, teini abide by the rules
+
+4) Fixed positioning -> element remains fixed at that position , positioning is done relative to body
+so that scroll gardaa ni tyo tehi jo rahosss, fixed at the specified position of body
+-Navigation-Bar ma yo apply garna sakinxa, scroll garda ni dekhaairaakhoss vanera
+# TODO
+Suruma red, blue, yellow laskaarai xan[inline garayesi], we want blue,yellow,then red
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++/
